@@ -1,0 +1,244 @@
+
+/* * {
+    padding: 0
+} */
+
+* {
+	font-family: 'Roboto Mono', monospace;
+}
+
+#name-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+}
+
+#introText {
+    height:90vh;
+}
+
+/*  Self typing text */
+
+.typewriter {
+  color: #fff;
+  font-size: 35px;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+/*  END self typing text */
+
+#landing-page {
+    background: url("./public/background4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*  Animation for arrow */
+
+.arrow{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+
+
+/* About part  */
+
+#about {
+    height:100vh;
+    background-color: #FFF;
+}
+
+#aboutGrid {
+    height: 100%;
+}
+
+/* Projects part */
+
+.modal-lg {
+    max-width: 90%;
+}
+
+/* Stack */
+
+#stack {
+    background-color: #fff;
+}
+
+.image-stack {
+    width: 150px;
+    height: 150px;
+}
+
+#react-logo {
+    width: 250px;
+}
+
+#handlebars-logo {
+	height: 250px;
+}
+
+#jquery-logo {
+    width: 250px;
+}
+
+#bootsrap-logo {
+    height: 200px;
+}
+
+#git-logo {
+    width: 250px;
+}
+
+#python-logo {
+    width: 300px;
+}
+
+#postgresql-logo {
+    width: 250px;
+    height: 250px;
+}
+
+#socket-logo {
+	width: 300px;
+}
+
+#aws-logo {
+	width: 300px;
+}
+
+
+/* Icons in popup */
+
+.image-stack-popup {
+	width: 50px;
+    height: 50px;
+}
+
+#node-logo-popup {
+	width: 80px;
+}
+
+#git-logo-popup {
+	width: 80px;
+}
+
+#react-logo-popup {
+	width: 80px;
+}
+
+#aws-logo-popup {
+	width: 80px;
+}
+
+#socket-logo-popup {
+	width: 80px;
+}
+
+
+
+/*  Contact */
+
+#contact {
+    height:100vh;
+    background-color: #fff;
+}
+
+
+
+
+/* Button colors */
+
+#button-petition {
+	background: #FF8300;
+	border: none;
+	outline: none;
+	border-radius: 0;
+}
+
+#button-petition:hover {
+	opacity: 0.8;
+}
+
+#button-imageboard {
+	background: gainsboro;
+	border: none;
+	outline: none;
+	border-radius: 0;
+
+}
+
+#button-imageboard:hover {
+	opacity: 0.8;
+}
+
+#button-socialnetwork {
+	background: SkyBlue;
+	border: none;
+	outline: none;
+	border-radius: 0;
+}
+
+#button-socialnetwork:hover {
+	opacity: 0.8;
+}
+
+#button-coworking {
+	background: rgb(57, 204, 204);
+	border: none;
+	outline: none;
+	border-radius: 0;
+}
+
+#button-coworking:hover {
+	opacity: 0.8;
+}
