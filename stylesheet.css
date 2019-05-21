@@ -96,6 +96,7 @@
 #about {
     height:100vh;
     background-color: #FFF;
+    margin-bottom: 100px;
 }
 
 #aboutGrid {
@@ -113,6 +114,7 @@
 #stack {
     background-color: #fff;
     width: 1000px;
+    margin-bottom: 100px;
 }
 
 .image-stack {
@@ -284,7 +286,7 @@
 /*  Contact */
 
 #contact {
-    height:100vh;
+    height:600px;
     background-color: #fff;
 }
 
@@ -336,4 +338,9 @@
 
 #button-coworking:hover {
 	opacity: 0.8;
+}
+
+
+#button-bottom {
+    width: 300px;
 }
