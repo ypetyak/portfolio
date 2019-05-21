@@ -112,48 +112,143 @@
 
 #stack {
     background-color: #fff;
+    width: 1000px;
 }
 
 .image-stack {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
+    transition: all .2s ease-in-out;
+}
+
+.image-stack:hover {
+    transform: scale(1.2);
+}
+
+#node-logo {
+    width: 100px;
+    transition: all .2s ease-in-out;
+}
+
+#node-logo:hover {
+    transform: scale(1.2);
 }
 
 #react-logo {
-    width: 250px;
+    width: 100px;
+    transition: all .2s ease-in-out;
+}
+
+#react-logo:hover {
+    transform: scale(1.2);
 }
 
 #handlebars-logo {
-	height: 250px;
+    height: 75px;
+    transition: all .2s ease-in-out;
+}
+
+#handlebars-logo:hover {
+	transform: scale(1.2);
 }
 
 #jquery-logo {
-    width: 250px;
+    width: 120px;
+    transition: all .2s ease-in-out;
+}
+
+#jquery-logo:hover {
+    transform: scale(1.2);
 }
 
 #bootsrap-logo {
-    height: 200px;
+    height: 75px;
+    transition: all .2s ease-in-out;
+}
+
+#bootsrap-logo:hover {
+    transform: scale(1.2);
 }
 
 #git-logo {
-    width: 250px;
+    width: 100px;
+    transition: all .2s ease-in-out;
+}
+
+#git-logo:hover {
+    transform: scale(1.2);
 }
 
 #python-logo {
-    width: 300px;
+    width: 120px;
+    transition: all .2s ease-in-out;
+}
+
+#python-logo:hover {
+    transform: scale(1.2);
 }
 
 #postgresql-logo {
-    width: 250px;
-    height: 250px;
+    width: 75px;
+    height: 75px;
+    transition: all .2s ease-in-out;
+}
+
+#postgresql-logo:hover {
+    transform: scale(1.2);
 }
 
 #socket-logo {
-	width: 300px;
+    width: 130px;
+    transition: all .2s ease-in-out;
+}
+
+#socket-logo:hover {
+	transform: scale(1.2);
 }
 
 #aws-logo {
-	width: 300px;
+    width: 125px;
+    transition: all .2s ease-in-out;
+}
+
+#aws-logo:hover {
+	transform: scale(1.2);
+}
+
+#sql-logo {
+    transition: all .2s ease-in-out;
+}
+
+#sql-logo:hover {
+    transform: scale(1.2);
+}
+
+#firebase-logo {
+    width: 125px;
+    transition: all .2s ease-in-out;
+}
+
+#firebase-logo:hover {
+    transform: scale(1.2);
+}
+
+#reactnative-logo {
+    width: 125px;
+    transition: all .2s ease-in-out;
+}
+
+#reactnative-logo:hover {
+    transform: scale(1.2);
+}
+
+#mongodb-logo {
+    width: 125px;
+    transition: all .2s ease-in-out;
+}
+
+#mongodb-logo:hover {
+    transform: scale(1.2);
 }
 
 
