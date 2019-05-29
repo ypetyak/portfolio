@@ -340,6 +340,17 @@
 	opacity: 0.8;
 }
 
+#button-travel {
+	background: rgb(255,65,54);
+	border: none;
+	outline: none;
+	border-radius: 0;
+}
+
+#button-travel:hover {
+	opacity: 0.8;
+}
+
 
 #button-bottom {
     width: 300px;

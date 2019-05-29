@@ -1,620 +1,723 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./stylesheet.css">
-        <title> Portfolio </title>
-    </head>
-    <body>
-        <!--  Landing page (part) with navigation -->
-        <div id="landing-page" class='container-fluid'>
-            <header>
-                <ul class="nav justify-content-end">
-                  <h3 id="name-title" class="mr-auto mt-4 ml-3 text-light"> Yevhen Petyak </h3>
-                  <li class="nav-item mx-4 mt-3">
-                    <a class="nav-link text-light h4" href="#about">About</a>
-                  </li>
-                  <li class="nav-item mx-4 mt-3">
-                    <a class="nav-link text-light h4" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item mx-4 mt-3">
-                    <a class="nav-link text-light h4" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item mx-4 mt-3">
-                    <a class="nav-link text-light h4" href="https://www.linkedin.com/in/ypetyak/"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                  <li class="nav-item mx-4 mt-3">
-                    <a class="nav-link text-light h4" href="https://github.com/ypetyak"><i class="fab fa-github"></i></a>
-                  </li>
-                </ul>
-            </header>
-            <div id="introText" class='d-flex justify-content-center align-items-center'>
-                <h1 class="typewriter mb-5"> Let's build something awesome. Together. </h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="arrow">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
 
-        <!--  About page -->
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+	<title> Portfolio </title>
+</head>
 
-        <div id="about" class='container-fluid'>
-            <h1 class="text-center mt-5"> About Me </h1>
-            <div  id="aboutGrid" class="row justify-content-around align-items-center">
-                <div class="col-4">
-                    <img src="./public/me.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="profile photo">
-                </div>
-                <div class="col-6 d-flex flex-column">
-										<blockquote class="blockquote mb-0 align-self-end mb-5">
-												<p>We are the music-makers,<br>
-													And we are the dreamers of dreams</p>
-												<footer class="blockquote-footer">Arthur O’Shaunessy</footer>
-											</blockquote>
-											<p>
-													Hi wonderer! Welcome to my site. <br><br>
-
-													I am a Full Stack Web Developer. My work stack you can find below, as well as examples of my work. <br><br>
-													
-													For me, development or coding is not just words or a career. It is a tool. A tool to make something from nothing. To express your ideas and dreams in a form and "flesh". <br><br>
-													
-													I believe that we humans are builders by nature, let our civilization be a testament to that. So let's build something, together. 
-											</p>
-                  
-                </div>
-          </div>
-        </div>
-
-
-        <!-- Projects part -->
-
-        <div id="projects" class="container-fluid">
-            <h1 class="text-center mt-5 mb-5"> Projects </h1>
-            <div class="row">
-                <div class="col-4 my-3 d-flex justify-content-center align-items-center">
-                    <div class="card" style="width: 20rem;">
-                      <img class="card-img-top" src="./public/petition-1.png" alt="Project Petition">
-                      <div class="card-body">
-                        <p class="card-text">The petiton website, where you can register and sign the petiton.</p>
-                      </div>
-                      <button type="button" id="button-petition" class="btn btn-info" data-toggle="modal" data-target="#projectOne">
-                          Learn More
-                    </button>
-                    </div>
-                </div>
-                <div class="col-4 my-3 d-flex justify-content-center align-items-center">
-                    <div class="card" style="width: 20rem;">
-                      <img class="card-img-top" src="./public/imageboard-1.jpg" alt="Project Imageboard">
-                      <div class="card-body">
-                        <p class="card-text">The imageboard website, which allows to upload, see and comment on images.</p>
-                      </div>
-					  <button type="button" id="button-imageboard" class="btn btn-info" data-toggle="modal" data-target="#projectTwo">
-						  Learn More
-					</button>
-                    </div>
-
-                </div>
-                <div class="col-4 my-3 d-flex justify-content-center align-items-center">
-                    <div class="card" style="width: 20rem;">
-                      <img class="card-img-top" src="./public/bubble_login.png" alt="Project 3">
-                      <div class="card-body">
-                        <p class="card-text">The social network website, which allows to have friends and chat with them.</p>
-                      </div>
-					  <button type="button" id="button-socialnetwork" class="btn btn-info" data-toggle="modal" data-target="#projectThree">
-						  Learn More
-					</button>
-                    </div>
-                </div>
-                <div class="col-4 my-3 d-flex justify-content-center align-items-center">
-                    <div class="card" style="width: 20rem;">
-                      <img class="card-img-top" src="./public/coworking-landing.jpg" alt="Porject 4">
-                      <div class="card-body">
-                        <p class="card-text">The coworking website, wich allows to create and join events using maps.</p>
-                      </div>
-					  <button type="button" id="button-coworking" class="btn btn-info" data-toggle="modal" data-target="#projectFour">
-						  Learn More
-					</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <!--  my stack page -->
-
-        <div id="stack" class='container-fluid'>
-            <h1 class="text-center mt-5 mb-5"> My Stack </h1>
-            <div class="row ml-5 justify-content-center align-items-center">
-                <div class="col-2 mt-4d-flex align-items-center justify-content-center">
-                    <img id="node-logo" class="image-stack" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="js-logo" class="image-stack" src="./public/stack_icons/js-logo.png" alt="js logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="css-logo" class="image-stack" src="./public/stack_icons/css-logo.png" alt="css logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="html-logo" class="image-stack" src="./public/stack_icons/html-logo.png" alt="html logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="sass-logo" class="image-stack" src="./public/stack_icons/sass-logo.png" alt="sass logo">
-                </div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-									<img id="handlebars-logo" class="image-stack" src="./public/stack_icons/handlebars-logo.png" alt="handlebars logo">
-								</div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="react-logo" class="image-stack" src="./public/stack_icons/react-logo.png" alt="react logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="vue-logo" class="image-stack" src="./public/stack_icons/vuelogo.png" alt="vue logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="jquery-logo" class="image-stack" src="./public/stack_icons/jquery-logo.png" alt="jquery logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="git-logo" class="image-stack" src="./public/stack_icons/git-logo.png" alt="git logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="bootsrap-logo" class="image-stack" src="./public/stack_icons/bootstrap-logo.png" alt="bootsrap logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="postgresql-logo" class="image-stack" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
-                </div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-														<img id="aws-logo" class="image-stack" src="./public/stack_icons/aws-logo-1.png" alt="aws logo">
-												</div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="socket-logo" class="image-stack" src="./public/stack_icons/socket-logo.png" alt="socket logo">
-                </div>
-                <div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-                    <img id="python-logo" class="image-stack" src="./public/stack_icons/python-logo.png" alt="python logo">
-								</div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-									<img id="sql-logo" class="image-stack" src="./public/stack_icons/sql-logo.png" alt="sql logo">
-								</div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-									<img id="firebase-logo" class="image-stack" src="./public/stack_icons/firebase-logo.png" alt="firebase logo">
-								</div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-									<img id="reactnative-logo" class="image-stack" src="./public/stack_icons/reactnative-logo.png" alt="react native logo">
-								</div>
-								<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
-									<img id="mongodb-logo" class="image-stack" src="./public/stack_icons/mongodb-logo.png" alt="mongoDB logo">
-								</div>
-
-        </div>
+<body>
+	<!--  Landing page (part) with navigation -->
+	<div id="landing-page" class='container-fluid'>
+		<header>
+			<ul class="nav justify-content-end">
+				<h3 id="name-title" class="mr-auto mt-4 ml-3 text-light"> Yevhen Petyak </h3>
+				<li class="nav-item mx-4 mt-3">
+					<a class="nav-link text-light h4" href="#about">About</a>
+				</li>
+				<li class="nav-item mx-4 mt-3">
+					<a class="nav-link text-light h4" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item mx-4 mt-3">
+					<a class="nav-link text-light h4" href="#contact">Contact</a>
+				</li>
+				<li class="nav-item mx-4 mt-3">
+					<a class="nav-link text-light h4" href="https://www.linkedin.com/in/ypetyak/"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li class="nav-item mx-4 mt-3">
+					<a class="nav-link text-light h4" href="https://github.com/ypetyak"><i class="fab fa-github"></i></a>
+				</li>
+			</ul>
+		</header>
+		<div id="introText" class='d-flex justify-content-center align-items-center'>
+			<h1 class="typewriter mb-5"> Let's build something awesome. Together. </h1>
+		</div>
+		<div class="d-flex justify-content-center">
+			<div class="arrow">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 	</div>
 
-        <!--  contact info -->
+	<!--  About page -->
 
-        <div id="contact" class='container-fluid'>
-            <h1 class="text-center mt-5 mb-5"> Contact Me </h1>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-4 d-flex justify-content-center align-items-center flex-column">
-                    <div class="mb-4">											
-                        <a href="https://github.com/ypetyak" class="text-secondary"><i class="fab fa-github fa-5x"></i></a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://www.linkedin.com/in/ypetyak" class="text-secondary"><i class="fab fa-linkedin fa-5x"></i></a>
-                    </div>
-								</div>
+	<div id="about" class='container-fluid'>
+		<h1 class="text-center mt-5"> About Me </h1>
+		<div id="aboutGrid" class="row justify-content-around align-items-center">
+			<div class="col-4">
+				<img src="./public/me.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="profile photo">
+			</div>
+			<div class="col-6 d-flex flex-column">
+				<blockquote class="blockquote align-self-end mb-5">
+					<p>We are the music-makers,<br>
+						And we are the dreamers of dreams</p>
+					<footer class="blockquote-footer">Arthur O’Shaunessy</footer>
+				</blockquote>
+				<p>
+					Hi wonderer! Welcome to my site. <br><br>
 
-                <div class="col-6">
-                    <form action="https://formspree.io/ypetyak@gmail.com" method="POST">
-                      <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" name="_replyto" class="form-control" id="email" placeholder="name@example.com">
-                      </div>
-                      <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="phone" name="phone" class="form-control" id="phone" placeholder="+44">
-                      </div>
-                      <div class="form-group">
-                        <label for="text">Enter text</label>
-                        <textarea type="textarea" name="text" class="form-control" id="text" rows="3"></textarea>
-                      </div>
-                      <button type="submit" value="Send" class="btn btn-block btn-secondary mb-2">Send</button>
-                    </form>
-                </div>
+					I am a Full Stack Web Developer. My work stack you can find below, as well as examples of my work. <br><br>
+
+					For me, development or coding is not just words or a career. It is a tool. A tool to make something from nothing. To express your ideas and dreams in a form and "flesh". <br><br>
+
+					I believe that we humans are builders by nature, let our civilization be a testament to that. So let's build something. Together.
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Projects part -->
+
+	<div id="projects" class="container-fluid">
+		<h1 class="text-center mt-5 mb-5"> Projects </h1>
+		<div class="row">
+			<div class="col-4 my-3 d-flex justify-content-center align-items-center">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="./public/petition-1.png" alt="Project Petition">
+					<div class="card-body">
+						<p class="card-text">The petiton website, where you can register and sign the petiton.</p>
+					</div>
+					<button type="button" id="button-petition" class="btn btn-info" data-toggle="modal" data-target="#projectOne">
+						Learn More
+					</button>
 				</div>
 			</div>
-			<div class="container-fluid d-flex align-items-center justify-content-center mb-5">
-					<a href="#landing-page" id="button-bottom" class="btn btn-info btn-lg">Back <i class="fas fa-arrow-up"></i></a>
+			<div class="col-4 my-3 d-flex justify-content-center align-items-center">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="./public/imageboard-1.jpg" alt="Project Imageboard">
+					<div class="card-body">
+						<p class="card-text">The imageboard website, which allows to upload, see and comment on images.</p>
+					</div>
+					<button type="button" id="button-imageboard" class="btn btn-info" data-toggle="modal" data-target="#projectTwo">
+						Learn More
+					</button>
+				</div>
+
 			</div>
-        <!--  Modals for Projects-->
+			<div class="col-4 my-3 d-flex justify-content-center align-items-center">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="./public/bubble_login.png" alt="Project 3">
+					<div class="card-body">
+						<p class="card-text">The social network website, which allows to have friends and chat with them.</p>
+					</div>
+					<button type="button" id="button-socialnetwork" class="btn btn-info" data-toggle="modal" data-target="#projectThree">
+						Learn More
+					</button>
+				</div>
+			</div>
+			<div class="col-4 my-3 d-flex justify-content-center align-items-center">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="./public/coworking-landing.jpg" alt="Porject 4">
+					<div class="card-body">
+						<p class="card-text">The coworking website, wich allows to create and join events using maps.</p>
+					</div>
+					<button type="button" id="button-coworking" class="btn btn-info" data-toggle="modal" data-target="#projectFour">
+						Learn More
+					</button>
+				</div>
+			</div>
+			<div class="col-4 my-3 d-flex justify-content-center align-items-center">
+				<div class="card" style="width: 20rem;">
+					<img class="card-img-top" src="./public/klasttravel-1.jpg" alt="Travel Agency">
+					<div class="card-body">
+						<p class="card-text">The website for the Travel Agency, to improve web presence.</p>
+					</div>
+					<button type="button" id="button-travel" class="btn btn-info" data-toggle="modal" data-target="#projectFive">
+						Learn More
+					</button>
+				</div>
 
-        <!--  Petition Project -->
+			</div>
+		</div>
 
-        <div class="modal fade" id="projectOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body p-0">
-                  <button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <div class="row">
-                      <div class="col-6 d-flex justify-content-center align-items-center">
-                          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-							  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="./public/petition-1.png" alt="Petition slide one">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="./public/petition-2.png" alt="Petition slide two">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="./public/petition-3.png" alt="Petition slide three">
-                              </div>
-							  <div class="carousel-item">
-                                <img class="d-block w-100" src="./public/petition-4.png" alt="Petition slide four">
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
-                      </div>
-                      <div class="col-6 d-flex flex-column">
-                          <h2 class="text-center mt-4 mb-3"> Petiton </h2>
-						  <p> The idea behind this project is to create an online petition that visitors can sign to make their voice heard on an issue of your choosing. The website starts with the welcome page where you can proceed to registration page or login page. The site uses <b><i>cookie sessions</i></b> to figure out if the user is logged in and if true, user will be redirected to the siging page. Similarly if the user tries to access any other page without being logged in, he/she will be redirected to login page. <br><br>
+	</div>
 
-						  Password is encrypted with the <b><i>bcrypt</i></b> algorithm and stored in our database. The website also stored various user data, such as name, email, address, signature etc. It is also possible to change provided information in <i>Profile</i> section of the website.<br><br>
 
-						  The website uses <b><i>handlebars</i></b> library to orginize its structure. <br><br>
+	<!--  my stack page -->
 
-						  The canvas for signing is created through the pure <i>Javascript</i> and allows user to experience signing of a petition as if it was done by hand. Obviously there is an option to delete your petition if you changed your mind or simply unsatisfied with the quality of your signature.<br><br>
+	<div id="stack" class='container-fluid'>
+		<h1 class="text-center mt-5 mb-5"> My Stack </h1>
+		<div class="row ml-5 justify-content-center align-items-center">
+			<div class="col-2 mt-4d-flex align-items-center justify-content-center">
+				<img id="node-logo" class="image-stack" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="js-logo" class="image-stack" src="./public/stack_icons/js-logo.png" alt="js logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="css-logo" class="image-stack" src="./public/stack_icons/css-logo.png" alt="css logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="html-logo" class="image-stack" src="./public/stack_icons/html-logo.png" alt="html logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="sass-logo" class="image-stack" src="./public/stack_icons/sass-logo.png" alt="sass logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="handlebars-logo" class="image-stack" src="./public/stack_icons/handlebars-logo.png" alt="handlebars logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="react-logo" class="image-stack" src="./public/stack_icons/react-logo.png" alt="react logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="vue-logo" class="image-stack" src="./public/stack_icons/vuelogo.png" alt="vue logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="jquery-logo" class="image-stack" src="./public/stack_icons/jquery-logo.png" alt="jquery logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="git-logo" class="image-stack" src="./public/stack_icons/git-logo.png" alt="git logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="bootsrap-logo" class="image-stack" src="./public/stack_icons/bootstrap-logo.png" alt="bootsrap logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="postgresql-logo" class="image-stack" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="aws-logo" class="image-stack" src="./public/stack_icons/aws-logo-1.png" alt="aws logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="socket-logo" class="image-stack" src="./public/stack_icons/socket-logo.png" alt="socket logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="python-logo" class="image-stack" src="./public/stack_icons/python-logo.png" alt="python logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="sql-logo" class="image-stack" src="./public/stack_icons/sql-logo.png" alt="sql logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="firebase-logo" class="image-stack" src="./public/stack_icons/firebase-logo.png" alt="firebase logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="reactnative-logo" class="image-stack" src="./public/stack_icons/reactnative-logo.png" alt="react native logo">
+			</div>
+			<div class="col-2 mt-4 mb-3 d-flex align-items-center justify-content-center">
+				<img id="mongodb-logo" class="image-stack" src="./public/stack_icons/mongodb-logo.png" alt="mongoDB logo">
+			</div>
 
-						  Feel free to explore the website, link below, as there is more to see to it.
-						  </p>
-                          <h2 class="text-center my-3"> Stack Used </h2>
-						  <div id="small-stack" class='container-fluid mb-3'>
-				              <div class="row justify-content-center align-items-center">
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
-				                  </div>
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
-				                  </div>
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
-				                  </div>
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
-				                  </div>
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img class="image-stack-popup mt-3" src="./public/stack_icons/handlebars-logo.png" alt="handlebars logo">
-				                  </div>
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
-				                  </div>
-				                  <div class="col-2 d-flex justify-content-center align-items-center">
-				                      <img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
-				                  </div>
-				          	</div>
+		</div>
+	</div>
+
+	<!--  contact info -->
+
+	<div id="contact" class='container-fluid'>
+		<h1 class="text-center mt-5 mb-5"> Contact Me </h1>
+		<div class="row justify-content-center align-items-center">
+			<div class="col-4 d-flex justify-content-center align-items-center flex-column">
+				<div class="mb-4">
+					<a href="https://github.com/ypetyak" class="text-secondary"><i class="fab fa-github fa-5x"></i></a>
+				</div>
+				<div class="mt-4">
+					<a href="https://www.linkedin.com/in/ypetyak" class="text-secondary"><i class="fab fa-linkedin fa-5x"></i></a>
+				</div>
+			</div>
+
+			<div class="col-6">
+				<form action="https://formspree.io/ypetyak@gmail.com" method="POST">
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" name="_replyto" class="form-control" id="email" placeholder="name@example.com">
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone</label>
+						<input type="phone" name="phone" class="form-control" id="phone" placeholder="+44">
+					</div>
+					<div class="form-group">
+						<label for="text">Enter text</label>
+						<textarea type="textarea" name="text" class="form-control" id="text" rows="3"></textarea>
+					</div>
+					<button type="submit" value="Send" class="btn btn-block btn-secondary mb-2">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-flex align-items-center justify-content-center mb-5">
+		<a href="#landing-page" id="button-bottom" class="btn btn-info btn-lg">Back <i class="fas fa-arrow-up"></i></a>
+	</div>
+	<!--  Modals for Projects-->
+
+	<!--  Petition Project -->
+
+	<div class="modal fade" id="projectOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row">
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./public/petition-1.png" alt="Petition slide one">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/petition-2.png" alt="Petition slide two">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/petition-3.png" alt="Petition slide three">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/petition-4.png" alt="Petition slide four">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div>
-							
-								<h5 class="text-center"> You want to learn more about the project?</h5>
-								<div class="d-flex justify-content-around">
-									<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/petition"><i class="fab fa-github"></i></a>
-									<a class="text-dark h1 text-center mb-3" href="https://ypetyak-petition.herokuapp.com"><i class="fas fa-link"></i></i></a>
+						</div>
+						<div class="col-6 d-flex flex-column">
+							<h2 class="text-center mt-4 mb-3"> Petiton </h2>
+							<p> The idea behind this project is to create an online petition that visitors can sign to make their voice heard on an issue of your choosing. The website starts with the welcome page where you can proceed to the registration page or the login
+								page. The site uses <b><i>cookie sessions</i></b> to figure out if the user is logged in and if true, user will be redirected to the siging page. Similarly, if the user tries to access any other page without being logged in, he/she
+								will be redirected to the login page. <br><br>
+
+								Password is encrypted with the <b><i>bcrypt</i></b> algorithm and stored in our database. The website also stored various user data, such as name, email, address, signature, etc. It is also possible to change provided information in
+								<i>Profile</i> section of the website.<br><br>
+
+								The website uses <b><i>handlebars</i></b> library to orginize its structure. <br><br>
+
+								The canvas for signing is created through the pure <i>Javascript</i> and allows a user to experience signing of a petition as if it was done by hand.<br><br>
+
+								Feel free to explore the website, link below, as there is more to see to it.
+							</p>
+							<h2 class="text-center my-3"> Stack Used </h2>
+							<div id="small-stack" class='container-fluid mb-3'>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/handlebars-logo.png" alt="handlebars logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
+									</div>
 								</div>
-              </div>
+							</div>
+
+							<h5 class="text-center"> Do you want to learn more about the project?</h5>
+							<div class="d-flex justify-content-around">
+								<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/petition"><i class="fab fa-github"></i></a>
+								<a class="text-dark h1 text-center mb-3" href="https://ypetyak-petition.herokuapp.com"><i class="fas fa-link"></i></i></a>
+							</div>
+						</div>
+					</div>
 				</div>
-            </div>
-          </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Image Board Project -->
 
 	<div class="modal fade" id="projectTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-		<div class="modal-content">
-		  <div class="modal-body p-0">
-			  <button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			  <div class="row">
-				  <div class="col-6 d-flex justify-content-center align-items-center">
-					  <div id="carouselExampleIndicatorsTwo" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-						  <li data-target="#carouselExampleIndicatorsTwo" data-slide-to="0" class="active"></li>
-						  <li data-target="#carouselExampleIndicatorsTwo" data-slide-to="1"></li>
-						</ol>
-						<div class="carousel-inner">
-						  <div class="carousel-item active">
-							<img class="d-block w-100" src="./public/imageboard-1.jpg" alt="Imageboard slide one">
-						  </div>
-						  <div class="carousel-item">
-							<img class="d-block w-100" src="./public/imageboard-2.jpg" alt="Imageboard slide two">
-						  </div>
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row">
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<div id="carouselExampleIndicatorsTwo" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicatorsTwo" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicatorsTwo" data-slide-to="1"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./public/imageboard-1.jpg" alt="Imageboard slide one">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/imageboard-2.jpg" alt="Imageboard slide two">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicatorsTwo" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicatorsTwo" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleIndicatorsTwo" role="button" data-slide="prev">
-						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						  <span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleIndicatorsTwo" role="button" data-slide="next">
-						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						  <span class="sr-only">Next</span>
-						</a>
-					  </div>
-				  </div>
-				  <div class="col-6 d-flex flex-column">
-					  <h2 class="text-center mt-4 mb-3"> Imageboard </h2>
-					  <p> Imagine a site where anybody could go and post an image of their choosing, along with a title and a textual description of that image, and others could go and look at that image and make thoughtful remarks about it. Yes, that's an imageboard. <br><br>
+						<div class="col-6 d-flex flex-column">
+							<h2 class="text-center mt-4 mb-3"> Imageboard </h2>
+							<p> Imagine a site where anybody could go and post an image of their choosing, along with a title and a textual description of that image, and others could go and look at that image and make thoughtful remarks about it. Yes, that's an
+								imageboard. <br><br>
 
-					  This website uses a <b>Vue.js</b> framework and is a SPA (single page application). When user upload an image, the website uses the <b>AWS</b> (Amazon Web Services) to store provided images. Additional functionality allows to open every image and comment on it. <br><br>
+								This website uses a <b>Vue.js</b> framework and is a SPA (single page application). When a user uploads an image, the website uses the <b>AWS</b> (Amazon Web Services) to store provided images. Additional functionality allows to open
+								every image and comment on it. <br><br>
 
-					  Feel free to explore the website, link below, as there is more to see to it.
-					   </p>
+								Feel free to explore the website, link below, as there is more to see to it.
+							</p>
 
-					  <h2 class="text-center my-3"> Stack Used </h2>
-					  <div id="small-stack" class='container-fluid mb-3'>
-						  <div class="row justify-content-center align-items-center">
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/vuelogo.png" alt="vue logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img id="aws-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/aws-logo-1.png" alt="aws logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img  id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
-							  </div>
+							<h2 class="text-center my-3"> Stack Used </h2>
+							<div id="small-stack" class='container-fluid mb-3'>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/vuelogo.png" alt="vue logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="aws-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/aws-logo-1.png" alt="aws logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
+									</div>
+								</div>
+							</div>
+							<h5 class="text-center"> Do you want to learn more about the project?</h5>
+							<div class="d-flex justify-content-around">
+								<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/imageboard"><i class="fab fa-github"></i></a>
+								<a class="text-dark h1 text-center mb-3" href="https://ypetyak-imageboard.herokuapp.com"><i class="fas fa-link"></i></i></a>
+							</div>
 						</div>
-					</div>
-					<h5 class="text-center"> You want to learn more about the project?</h5>
-					<div class="d-flex justify-content-around">
-						<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/imageboard"><i class="fab fa-github"></i></a>
-						<a class="text-dark h1 text-center mb-3" href="https://ypetyak-imageboard.herokuapp.com"><i class="fas fa-link"></i></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
-	  </div>
 	</div>
-</div>
 
 	<!-- Social Network Project -->
 
 	<div class="modal fade" id="projectThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-		<div class="modal-content">
-		  <div class="modal-body p-0">
-			  <button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			  <div class="row">
-				  <div class="col-6 d-flex justify-content-center align-items-center">
-					  <div id="carouselExampleIndicatorsThree" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-						 <li data-target="#carouselExampleIndicatorsThree" data-slide-to="0" class="active"></li>
-						 <li data-target="#carouselExampleIndicatorsThree" data-slide-to="1"></li>
-						 <li data-target="#carouselExampleIndicatorsThree" data-slide-to="2"></li>
-						 <li data-target="#carouselExampleIndicatorsThree" data-slide-to="3"></li>
-						 <li data-target="#carouselExampleIndicatorsThree" data-slide-to="4"></li>
-						 <li data-target="#carouselExampleIndicatorsThree" data-slide-to="5"></li>
-						</ol>
-						<div class="carousel-inner">
-						  <div class="carousel-item active">
-							<img class="d-block w-100" src="./public/bubble_login.png" alt="Social network slide one">
-						  </div>
-						  <div class="carousel-item">
-							<img class="d-block w-100" src="./public/bubble_homepage.png" alt="Social network slide two">
-						  </div>
-						  <div class="carousel-item">
-						   <img class="d-block w-100" src="./public/bubble_profile.png" alt="Social network slide three">
-						 </div>
-						 <div class="carousel-item">
-						   <img class="d-block w-100" src="./public/bubble_online.png" alt="Social network slide four">
-						 </div>
-						 <div class="carousel-item">
-						   <img class="d-block w-100" src="./public/bubble_friends.png" alt="Social network slide five">
-						 </div>
-						 <div class="carousel-item">
-						   <img class="d-block w-100" src="./public/bubble_chat.png" alt="Social network slide six">
-						 </div>
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row">
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<div id="carouselExampleIndicatorsThree" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicatorsThree" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicatorsThree" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicatorsThree" data-slide-to="2"></li>
+									<li data-target="#carouselExampleIndicatorsThree" data-slide-to="3"></li>
+									<li data-target="#carouselExampleIndicatorsThree" data-slide-to="4"></li>
+									<li data-target="#carouselExampleIndicatorsThree" data-slide-to="5"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./public/bubble_login.png" alt="Social network slide one">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/bubble_homepage.png" alt="Social network slide two">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/bubble_profile.png" alt="Social network slide three">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/bubble_online.png" alt="Social network slide four">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/bubble_friends.png" alt="Social network slide five">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/bubble_chat.png" alt="Social network slide six">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicatorsThree" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicatorsThree" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleIndicatorsThree" role="button" data-slide="prev">
-						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						  <span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleIndicatorsThree" role="button" data-slide="next">
-						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						  <span class="sr-only">Next</span>
-						</a>
-					  </div>
-				  </div>
-				  <div class="col-6 d-flex flex-column">
-					  <h2 class="text-center mt-4 mb-3"> Social Network </h2>
-					  <p> This social network allows users to sign up, say a little about themselves, become friends with other users and chat online. It is made with <b>React</b> framework, and is a SPA (single page application). <br><br>
+						<div class="col-6 d-flex flex-column">
+							<h2 class="text-center mt-4 mb-3"> Social Network </h2>
+							<p> This social network allows users to sign up, say a little about themselves, become friends with other users and chat online. It is made with <b>React</b> framework, and is a SPA (single page application). <br><br>
 
-					  To improve data flow within the App this project also uses <b>Redux</b>.</br></br>
+								To improve data flow within the App this project also uses <b>Redux</b>.</br></br>
 
-					  This site uses <b>socket.io</b> to enable live conversation in the chat.</br></br>
+								This site uses <b>socket.io</b> to enable live conversation in the chat.</br></br>
 
-					  Feel free to explore the website, link below, as there is more to see to it.
-					  </p>
+								Feel free to explore the website, link below, as there is more to see to it.
+							</p>
 
 
-					  <h2 class="text-center my-3"> Stack Used </h2>
-					  <div id="small-stack" class='container-fluid mb-3'>
-						  <div class="row justify-content-center align-items-center">
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img id="react-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/react-logo.png" alt="react logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img id="socket-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/socket-logo.png" alt="socket logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
-							  </div>
-							  <div class="col-2 d-flex justify-content-center align-items-center">
-								  <img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
-							  </div>
+							<h2 class="text-center my-3"> Stack Used </h2>
+							<div id="small-stack" class='container-fluid mb-3'>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="react-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/react-logo.png" alt="react logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="socket-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/socket-logo.png" alt="socket logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
+									</div>
+								</div>
+							</div>
+							<h5 class="text-center"> Do you want to learn more about the project?</h5>
+							<div class="d-flex justify-content-around">
+								<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/socialnetwork"><i class="fab fa-github"></i></a>
+								<a class="text-dark h1 text-center mb-3" href="https://ypetyak-socialnetwork.herokuapp.com"><i class="fas fa-link"></i></i></a>
+							</div>
 						</div>
-					</div>
-					<h5 class="text-center"> You want to learn more about the project?</h5>
-					<div class="d-flex justify-content-around">
-						<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/socialnetwork"><i class="fab fa-github"></i></a>
-						<a class="text-dark h1 text-center mb-3" href="https://ypetyak-socialnetwork.herokuapp.com"><i class="fas fa-link"></i></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
-	  </div>
 	</div>
-</div>
 
 
-<!-- Social Network Project -->
+	<!-- Coworking Project -->
 
-<div class="modal fade" id="projectFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-	<div class="modal-content">
-	  <div class="modal-body p-0">
-		  <button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		  </button>
-		  <div class="row">
-			  <div class="col-6 d-flex justify-content-center align-items-center">
-				  <div id="carouselExampleIndicatorsFour" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-					 <li data-target="#carouselExampleIndicatorsFour" data-slide-to="0" class="active"></li>
-					 <li data-target="#carouselExampleIndicatorsFour" data-slide-to="1"></li>
-					 <li data-target="#carouselExampleIndicatorsFour" data-slide-to="2"></li>
-					 <li data-target="#carouselExampleIndicatorsFour" data-slide-to="3"></li>
-					 <li data-target="#carouselExampleIndicatorsFour" data-slide-to="4"></li>
-					 <li data-target="#carouselExampleIndicatorsFour" data-slide-to="5"></li>
-					</ol>
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img class="d-block w-100" src="./public/coworking-landing.jpg" alt="Coworking slide one">
-					  </div>
-					  <div class="carousel-item">
-						<img class="d-block w-100" src="./public/coworking-registration.png" alt="Coworking slide two">
-					  </div>
-					  <div class="carousel-item">
-					   <img class="d-block w-100" src="./public/coworking-profile.jpg" alt="Coworking slide three">
-					 </div>
-					 <div class="carousel-item">
-					   <img class="d-block w-100" src="./public/coworking-home.jpg" alt="Coworking slide four">
-					 </div>
-					 <div class="carousel-item">
-					   <img class="d-block w-100" src="./public/coworking-map.jpg" alt="Coworking slide five">
-					 </div>
-					 <div class="carousel-item">
-					   <img class="d-block w-100" src="./public/coworking-event.jpg" alt="Coworking slide six">
-					 </div>
+	<div class="modal fade" id="projectFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row">
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<div id="carouselExampleIndicatorsFour" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicatorsFour" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicatorsFour" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicatorsFour" data-slide-to="2"></li>
+									<li data-target="#carouselExampleIndicatorsFour" data-slide-to="3"></li>
+									<li data-target="#carouselExampleIndicatorsFour" data-slide-to="4"></li>
+									<li data-target="#carouselExampleIndicatorsFour" data-slide-to="5"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./public/coworking-landing.jpg" alt="Coworking slide one">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/coworking-registration.png" alt="Coworking slide two">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/coworking-profile.jpg" alt="Coworking slide three">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/coworking-home.jpg" alt="Coworking slide four">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/coworking-map.jpg" alt="Coworking slide five">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/coworking-event.jpg" alt="Coworking slide six">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicatorsFour" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicatorsFour" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-6 d-flex flex-column">
+							<h2 class="text-center mt-4 mb-3"> Coworking Homes </h2>
+							<p> This website allows a user to be the host or participant of the coworking event. The Coworking Homes help people to turn their lonely homes in fun coworking environment or join one. <br><br>
+
+								It works on <b>React/Redux</b> framework and utilizes <b>Google Maps API</b> to create, find and join events.<br><br>
+
+								Users can create a profile for themselves and their homes, after which they can create or join coworking events. Events are created or selected by choosing a day user wants to participate. <br><br>
+
+								Feel free to explore the website, link below, as there is more to see to it.
+							</p>
+
+							<h2 class="text-center my-3"> Stack Used </h2>
+							<div id="small-stack" class='container-fluid mb-3'>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="react-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/react-logo.png" alt="react logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
+									</div>
+								</div>
+							</div>
+							<h5 class="text-center"> Do you want to learn more about the project?</h5>
+							<div class="d-flex justify-content-around">
+								<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/coworking"><i class="fab fa-github"></i></a>
+								<a class="text-dark h1 text-center mb-3" href="https://ypetyak-coworking.herokuapp.com"><i class="fas fa-link"></i></i></a>
+							</div>
+						</div>
 					</div>
-					<a class="carousel-control-prev" href="#carouselExampleIndicatorsFour" role="button" data-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleIndicatorsFour" role="button" data-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Next</span>
-					</a>
-				  </div>
-			  </div>
-			  <div class="col-6 d-flex flex-column">
-				  <h2 class="text-center mt-4 mb-3"> Coworking Homes </h2>
-				  <p> This website allows user to be the host or participant of the coworking event. The Coworking Homes help people to turn their lonely homes in fun coworking environment. Or join one. <br><br>
-
-				  It works on <b>React/Redux</b> framework and utilize <b>Google Maps API</b> to create, find and join events.<br><br>
-
-				  Users can create profile for themselves and their homes, after which they can create or join coworking events. Events are created or selected by choosing a day user wants to participate.
-				   </p>
-
-				  <h2 class="text-center my-3"> Stack Used </h2>
-				  <div id="small-stack" class='container-fluid mb-3'>
-					  <div class="row justify-content-center align-items-center">
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img id="node-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/nodejs-logo.png" alt="node logo">
-						  </div>
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
-						  </div>
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
-						  </div>
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
-						  </div>
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img id="react-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/react-logo.png" alt="react logo">
-						  </div>
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
-						  </div>
-						  <div class="col-2 d-flex justify-content-center align-items-center">
-							  <img class="image-stack-popup mt-3" src="./public/stack_icons/postgresql-logo.png" alt="postgresql logo">
-						  </div>
-					</div>
-				</div>
-				<h5 class="text-center"> You want to learn more about the project?</h5>
-				<div class="d-flex justify-content-around">
-					<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/coworking"><i class="fab fa-github"></i></a>
-					<a class="text-dark h1 text-center mb-3" href="https://ypetyak-coworking.herokuapp.com"><i class="fas fa-link"></i></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
-  </div>
-</div>
-</div>
 
 
-        <!-- Scripts  -->
-				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-				<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-				<script src="./main.js"></script>
-    </body>
+	<!--  Travel Agency Website -->
+
+	<div class="modal fade" id="projectFive" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<button type="button" class="close mr-3 mt-3" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row">
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<div id="carouselExampleIndicatorsFive" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicatorsFive" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicatorsFive" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicatorsFive" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./public/klasttravel-1.jpg" alt="Travel Agency slide one">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/klasttravel-2.jpg" alt="Travel Agency slide two">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./public/klasttravel-3.jpg" alt="Travel Agency slide three">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicatorsFive" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicatorsFive" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-6 d-flex flex-column">
+							<h2 class="text-center mt-4 mb-3"> Travel Agency </h2>
+							<p> This is a website made for the travel agency. The main goal of this project
+								is to improve the web presence for the company. <br><br>
+
+								It consists of a landing page with the overview of the services provided, contact form, about us and how to find us. Also, it has third-party API which allows a user to search for available travel destinations.  <br><br>
+
+								It was built with the <b>Vue.js</b> and uses some third parties APIs, like Google Maps. The website is developed with responsive design in mind and is optimized for a mobile experience.
+							</p>
+
+							<h2 class="text-center my-3"> Stack Used </h2>
+							<div id="small-stack" class='container-fluid mb-3'>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/js-logo.png" alt="js logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/css-logo.png" alt="css logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/html-logo.png" alt="html logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img class="image-stack-popup mt-3" src="./public/stack_icons/vuelogo.png" alt="vue logo">
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<img id="git-logo-popup" class="image-stack-popup mt-3" src="./public/stack_icons/git-logo.png" alt="git logo">
+									</div>
+								</div>
+							</div>
+							<h5 class="text-center"> Do you want to learn more about the project?</h5>
+							<div class="d-flex justify-content-around">
+								<a class="text-dark h1 text-center mb-3" href="https://github.com/ypetyak/klasttravel"><i class="fab fa-github"></i></a>
+								<a class="text-dark h1 text-center mb-3" href="https://klasttravel.herokuapp.com/"><i class="fas fa-link"></i></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Scripts  -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./main.js"></script>
+</body>
+
 </html>
